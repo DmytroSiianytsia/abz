@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+
+.user {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+  width: 200px;
+  height: 270px;
+
+  &__photo {
+    width: 74px;
+    height: 74px;
+    margin-top: 15px;
+
+    border: 2px solid white;
+    border-radius: 50%;
+  }
+
+  &__name {
+    margin-top: 12px;
+
+    font-size: $h2;
+    line-height: $h2-line-h;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  &__tooltip {
+    display: none;
+  }
+
+  &__position {
+    margin-top: 10px;
+  }
+
+  &__position,
+  &__email,
+  &__phone {
+    font-size: $text;
+    line-height: $text-line-h;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    color: #706f6f;
+  }
+}

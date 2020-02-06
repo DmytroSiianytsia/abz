@@ -1,0 +1,16 @@
+@import "../../styles/variables";
+
+.footer {
+  height: 54px;
+
+  &__content {
+    margin: 0 auto;
+  }
+
+  &__text {
+    font-size: $text;
+    line-height: $text-line-h;
+
+    color: #706f6f;
+  }
+}

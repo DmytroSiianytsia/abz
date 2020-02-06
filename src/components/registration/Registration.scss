@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+
+.registration {
+  margin: 150px 0 125px;
+
+  &__content {
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: $h1-lg;
+    line-height: $h1-line-h-lg;
+    text-align: center;
+  }
+
+  &__subtitle {
+    width: 450px;
+    margin: 17px auto 0;
+
+    font-size: $text;
+    line-height: $text-line-h;
+    text-align: center;
+
+    color: #706f6f;
+  }
+}
+
+.form-group {
+  margin: 8px auto;
+  width: 466px;
+}
+
+.form-control__label {
+  margin-top: 20px;
+}
+
+.select-position {
+  margin: 18px 0 22px;
+
+  font-size: $text;
+}
+
+.custom-control {
+  margin-top: 4px;
+}
+
+.photo {
+  margin: 16px auto 8px;
+  width: 468px;
+}
+
+.custom-width {
+  display: block;
+  width: 468px;
+  margin: 0 auto;
+}
+
+.form__btn {
+  display: flex;
+  margin: 0 auto;
+}
+
+.btn.btn-primary {
+  margin: 40px auto;
+
+}
+
+

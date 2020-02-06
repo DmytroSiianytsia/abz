@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.about-me {
+  height: 721px;
+
+  &__content {
+    width: 100%;
+  }
+
+  &__title {
+    margin-top: 152px;
+    text-align: center;
+
+    font-size: $h1-lg;
+    line-height: $h1-line-h-lg;
+    font-weight: 400;
+  }
+
+  &__wrap {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
+
+  &__left {
+    margin: 20px 50px 0 25px;
+  }
+
+  &__img {
+    width: 339px;
+  }
+
+  &__right {
+    width: 552px;
+    text-align: justify;
+  }
+
+  &__subtitle {
+    font-size: $h2;
+    font-weight: 400;
+    line-height: $h2-line-h;
+    margin: 17px 0 20px 0;
+  }
+
+  &__text {
+    margin-bottom: 23px;
+
+    font-size: $text;
+    font-weight: 400;
+    line-height: $text-line-h;
+
+    color: #706f6f;
+  }
+}

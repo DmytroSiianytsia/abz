@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.header {
+  position: relative;
+
+  &__content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav {
+    display: flex;
+    width: 448px;
+    justify-content: space-between;
+
+    font-size: 14px;
+    line-height: 60px;
+
+    &__item {
+      text-decoration: none;
+      color: black;
+
+      &:focus {
+        color: $secondaryColor;
+      }
+
+      &:hover {
+        color: $primaryColor;
+      }
+    }
+  }
+}

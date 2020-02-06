@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.btn {
+  width: 210px;
+  height: 38px;
+  padding: 0;
+
+  font-size: $text;
+  letter-spacing: 1px;
+
+  border: 0;
+  border-radius: 4px;
+  color: $bg1;
+  background: $primaryColor;
+  outline: none;
+  user-focus: none;
+  cursor: pointer;
+
+  &:hover {
+    background: #d24335;
+  }
+}
+
+.btn_white {
+  text-align: left;
+
+  font-weight: 600;
+  letter-spacing: normal;
+
+  color: $primaryColor;
+  background: $bg1;
+
+  &:hover {
+    color: #d24335;
+    background: $bg1;
+  }
+}

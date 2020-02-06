@@ -1,0 +1,26 @@
+.top-block {
+  height: 600px;
+  background-image: url("../../bg/banner-photo.jpg");
+  background-size: cover;
+}
+.top-block__content {
+  display: flex;
+  flex-direction: column;
+  width: 532px;
+  height: 420px;
+  margin-top: 107px;
+  color: #ffffff;
+}
+.top-block__title {
+  margin-bottom: 25px;
+  font-size: 50px;
+  line-height: 54px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.top-block__text {
+  margin-bottom: 33px;
+  line-height: 1.5em;
+}
+
+/*# sourceMappingURL=TopBlock.css.map */

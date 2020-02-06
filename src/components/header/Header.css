@@ -1,0 +1,28 @@
+.header {
+  position: relative;
+}
+.header__content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .nav {
+  display: flex;
+  width: 448px;
+  justify-content: space-between;
+  font-size: 14px;
+  line-height: 60px;
+}
+.header .nav__item {
+  text-decoration: none;
+  color: black;
+}
+.header .nav__item:focus {
+  color: #007bff;
+}
+.header .nav__item:hover {
+  color: #ef5b4c;
+}
+
+/*# sourceMappingURL=Header.css.map */

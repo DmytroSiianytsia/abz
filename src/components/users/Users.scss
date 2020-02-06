@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.users {
+  background: $bg2;
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    margin-top: 142px;
+    font-size: $h1-lg;
+  }
+
+  &__subtitle {
+    margin-top: 6px;
+    font-size: $text;
+
+    color: #706f6f;
+  }
+
+  &__list {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    gap: 58px 132px;
+  }
+
+  &__btn {
+    margin: 3px 0 158px;
+  }
+}

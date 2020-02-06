@@ -1,0 +1,44 @@
+.about-me {
+  height: 721px;
+}
+.about-me__content {
+  width: 100%;
+}
+.about-me__title {
+  margin-top: 152px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 54px;
+  font-weight: 400;
+}
+.about-me__wrap {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.about-me__left {
+  margin: 20px 50px 0 25px;
+}
+.about-me__img {
+  width: 339px;
+}
+.about-me__right {
+  width: 552px;
+  text-align: justify;
+}
+.about-me__subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  margin: 17px 0 20px 0;
+}
+.about-me__text {
+  margin-bottom: 23px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #706f6f;
+}
+
+/*# sourceMappingURL=AboutMe.css.map */

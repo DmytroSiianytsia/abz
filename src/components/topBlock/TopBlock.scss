@@ -1,6 +1,7 @@
 @import "../../styles/variables";
 
 .top-block {
+  margin-top: 60px;
   height: 600px;
 
   background-image: url("../../bg/banner-photo.jpg");
@@ -22,12 +23,13 @@
     font-size: $h1-lg;
     line-height: $h1-line-h-lg;
     font-weight: 400;
+    letter-spacing: -0.5px;
 
     text-transform: uppercase;
   }
 
   &__text {
-    margin-bottom: 33px;
+    margin-bottom: 34px;
 
     line-height: 1.5em;
   }

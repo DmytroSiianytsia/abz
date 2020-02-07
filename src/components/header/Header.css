@@ -1,5 +1,8 @@
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: #ffffff;
 }
 .header__content {
   display: flex;
@@ -9,7 +12,7 @@
 }
 .header .nav {
   display: flex;
-  width: 448px;
+  width: 445px;
   justify-content: space-between;
   font-size: 14px;
   line-height: 60px;

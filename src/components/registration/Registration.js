@@ -2,14 +2,14 @@ import React, {Component} from 'react';
 import './Registration.css';
 
 class Registration extends Component {
+
     state = {
         token: null,
         formData: {
             name: '',
             email: '',
             phone: '',
-            position_id: null,
-            photo: ''
+            position_id: null
         }
     };
 
@@ -29,25 +29,21 @@ class Registration extends Component {
         })
     };
 
-    handleLoad = (e) => {
-        this.setState({
-            formData: {
-                ...this.state.formData,
-                photo: e.target.value
-            }
-        })
-    };
-
     handleSubmit = (e) => {
         e.preventDefault();
-    };
+        const {name, email, phone, position_id} = this.state.formData;
+        const formData = new FormData();
+        const fileField = document.querySelector('#customFile');
 
-    postForm = (e) => {
-        e.preventDefault();
-        console.log('formData: ', this.state.formData);
+        formData.append('position_id', position_id);
+        formData.append('name', name);
+        formData.append('email', email);
+        formData.append('phone', phone);
+        formData.append('photo', fileField.files[0]);
+
         fetch('https://frontend-test-assignment-api.abz.agency/api/v1/users', {
             method: 'POST',
-            body: JSON.stringify(this.state.formData),
+            body: formData,
             headers: {
                 'Token': this.state.token,
             },
@@ -55,16 +51,14 @@ class Registration extends Component {
             .then(function (response) {
                 return response.json();
             })
-            .then(function (data) {
-                console.log(data);
+            .then(data => {
                 if (data.success) {
-                    // process success response
-                } else {
-                    // proccess server errors
+                    this.props.getUsers();
+                    this.props.resetCountUsers();
                 }
             })
             .catch(function (error) {
-                // proccess network errors
+                console.error('Some error: ', error)
             });
     };
 
@@ -73,9 +67,9 @@ class Registration extends Component {
     }
 
     render() {
-        const {name, email, phone} = this.state;
+        const {name, email, phone} = this.state.formData;
         return (
-            <div className="registration">
+            <div className="registration" id="registration__anchor">
                 <div className="container">
                     <div className="registration__content">
                         <div className="registration__title">
@@ -86,7 +80,7 @@ class Registration extends Component {
                             update the list of users in the block from the top
                         </div>
 
-                        <form onSubmit={this.postForm}>
+                        <form onSubmit={this.handleSubmit}>
                             <div className="form-group">
                                 <label htmlFor="name" className="form-control__label">Name</label>
                                 <input
@@ -184,8 +178,6 @@ class Registration extends Component {
                                     type="file"
                                     className="custom-file-input"
                                     id="customFile"
-                                    value={this.state.photo}
-                                    onChange={(e) => this.handleLoad(e)}
                                 />
                                 <label className="custom-file-label" htmlFor="customFile">Upload your photo</label>
                             </div>

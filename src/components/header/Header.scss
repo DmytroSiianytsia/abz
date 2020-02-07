@@ -1,7 +1,10 @@
 @import "../../styles/variables";
 
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  background: $bg1;
 
   &__content {
     display: flex;
@@ -12,7 +15,7 @@
 
   .nav {
     display: flex;
-    width: 448px;
+    width: 445px;
     justify-content: space-between;
 
     font-size: 14px;

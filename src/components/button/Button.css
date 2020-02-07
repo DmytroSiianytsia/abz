@@ -3,7 +3,7 @@
   height: 38px;
   padding: 0;
   font-size: 16px;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
   border: 0;
   border-radius: 4px;
   color: #ffffff;
@@ -19,13 +19,17 @@
 .btn_white {
   text-align: left;
   font-weight: 600;
-  letter-spacing: normal;
+  letter-spacing: 0.1px;
   color: #ef5b4c;
   background: #ffffff;
 }
 .btn_white:hover {
   color: #d24335;
   background: #ffffff;
+}
+
+.btn:focus {
+  box-shadow: none;
 }
 
 /*# sourceMappingURL=Button.css.map */

@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["TopBlock.scss","../../styles/variables.scss"],"names":[],"mappings":"AAEA;EACE;EAEA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EAEA,OCbE;;ADgBJ;EACE;EAEA,WChBI;EDiBJ,aChBW;EDiBX;EAEA;;AAGF;EACE;EAEA","file":"TopBlock.css"}
+{"version":3,"sourceRoot":"","sources":["TopBlock.scss","../../styles/variables.scss"],"names":[],"mappings":"AAEA;EACE;EACA;EAEA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EAEA,OCdE;;ADiBJ;EACE;EAEA,WCjBI;EDkBJ,aCjBW;EDkBX;EACA;EAEA;;AAGF;EACE;EAEA","file":"TopBlock.css"}

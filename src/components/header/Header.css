@@ -23,15 +23,48 @@
         -ms-flex-pack: justify;
             justify-content: space-between;
     font-size: 14px;
-    line-height: 60px;
-    cursor: pointer; }
+    line-height: 60px; }
     .header .nav__item {
-      color: black; }
+      list-style: none;
+      color: black;
+      cursor: pointer; }
       .header .nav__item:focus {
         color: #007bff;
         outline: none; }
       .header .nav__item:hover {
         color: #ef5b4c; }
+  .header .nav-aside {
+    position: absolute;
+    top: 0;
+    left: -700px;
+    width: 290px;
+    height: 778px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background: #ffffff; }
+    .header .nav-aside__logo {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 40px;
+      padding-left: 15px; }
+  .header .nav-aside.visible {
+    left: 0; }
+  .header .nav1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 0 0 0 15px;
+    height: 214px;
+    margin: 0; }
+  .header .hor-line {
+    margin-top: 0; }
   @media (max-width: 640px) {
     .header {
       height: 40px; }
@@ -40,6 +73,7 @@
       .header .nav-header {
         display: none; }
       .header .header__menu-burger {
-        display: block; } }
+        display: block;
+        cursor: pointer; } }
 
 /*# sourceMappingURL=Header.css.map */

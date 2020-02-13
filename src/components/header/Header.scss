@@ -23,12 +23,12 @@
     justify-content: space-between;
 
     font-size: 14px;
-    line-height: 60px;
+    line-height: 60px;    
 
-    cursor: pointer;
-
-    &__item {      
+    &__item {  
+      list-style: none;    
       color: black;
+      cursor: pointer;
 
       &:focus {
         color: $secondaryColor;
@@ -39,6 +39,41 @@
         color: $primaryColor;
       }
     }
+  }
+
+  .nav-aside {    
+    position: absolute;
+    top: 0;
+    left: -700px;
+    width: 290px;
+    height: 778px;
+    transition: 0.5s;
+    
+
+    background: #ffffff;    
+    
+    &__logo {
+      display: flex;      
+      height: 40px;
+      padding-left: 15px;
+    }
+  }
+  
+  .nav-aside.visible {
+    left: 0;
+  }
+
+  .nav1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0 0 15px;   
+    height: 214px;
+    margin: 0;
+  } 
+
+  .hor-line {
+    margin-top: 0;
   }
 
   @media (max-width: 640px) {
@@ -53,7 +88,8 @@
     }
 
     .header__menu-burger {
-      display: block;   
-    }
+      display: block; 
+      cursor: pointer;  
+    }  
   }
 }

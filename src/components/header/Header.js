@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import './Header.css';
 
 function Header({ scrollTo }) {
-    const [isVisible, toggleVisible] = useState(false);  
-    const navAside = isVisible ? 'nav-aside' : 'nav-aside visible'; 
+    const [isVisible, toggleVisible] = useState(false);
+    const visible = isVisible ? 'visible' : '';
     return (
         <div className="header">
             <div className="container">
@@ -24,7 +24,14 @@ function Header({ scrollTo }) {
                             <li className="nav__item" tabIndex="4" onClick={() => scrollTo(2555)}>Sign Up</li>
                         </ul>
                     </nav>
-                    <nav className={navAside}>
+                    <nav className={`nav-aside ${visible}`}>
+                        {
+                            visible
+                                ?
+                                <div className={`bg ${visible}`} onClick={() => toggleVisible(!isVisible)}></div>
+                                :
+                                <div className="bg"></div>
+                        }
                         <div className="nav-aside__logo">
                             <img src="./img/logo.svg" alt="test task" className="logo__img" />
                         </div>

@@ -34,7 +34,8 @@
   font-size: 16px; }
 
 .custom-control {
-  margin-top: 4px; }
+  margin-top: 4px;
+  z-index: -1; }
 
 .photo {
   margin: 16px auto 8px;
@@ -43,7 +44,8 @@
 .custom-width {
   display: block;
   width: 468px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  z-index: -1; }
 
 .form__btn {
   display: -webkit-box;

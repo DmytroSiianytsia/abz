@@ -34,6 +34,7 @@
       .header .nav__item:hover {
         color: #ef5b4c; }
   .header .nav-aside {
+    display: none;
     position: absolute;
     top: 0;
     left: -700px;
@@ -50,6 +51,18 @@
       padding-left: 15px; }
   .header .nav-aside.visible {
     left: 0; }
+  .header .bg {
+    position: fixed;
+    top: 0;
+    left: -700px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1; }
+  .header .bg.visible {
+    left: 0;
+    -webkit-transform: 0.5s;
+            transform: 0.5s; }
   .header .nav1 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -74,6 +87,8 @@
         display: none; }
       .header .header__menu-burger {
         display: block;
-        cursor: pointer; } }
+        cursor: pointer; }
+      .header .nav-aside {
+        display: block; } }
 
 /*# sourceMappingURL=Header.css.map */

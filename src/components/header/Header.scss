@@ -41,14 +41,14 @@
     }
   }
 
-  .nav-aside {    
+  .nav-aside {
+    display: none;    
     position: absolute;
     top: 0;
     left: -700px;
     width: 290px;
     height: 778px;
-    transition: 0.5s;
-    
+    transition: 0.5s;        
 
     background: #ffffff;    
     
@@ -56,12 +56,28 @@
       display: flex;      
       height: 40px;
       padding-left: 15px;
-    }
+    }   
   }
-  
+
   .nav-aside.visible {
-    left: 0;
+    left: 0;    
   }
+
+  .bg {
+    position: fixed;
+    top: 0;
+    left: -700px;
+    width: 100vw;
+    height: 100vh;
+    background-color:  rgba(0, 0, 0, 0.5);
+    z-index: -1;
+        
+  }  
+
+  .bg.visible {
+    left: 0;
+    transform: 0.5s;
+  }  
 
   .nav1 {
     display: flex;
@@ -91,5 +107,9 @@
       display: block; 
       cursor: pointer;  
     }  
+
+    .nav-aside {
+      display: block;      
+    }
   }
 }

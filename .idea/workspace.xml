@@ -3,23 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="1f2bae2d-2437-48f8-bc3c-f778f3f8b1ba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/AboutMe.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/aboutMe/AboutMe.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/AboutMe.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/aboutMe/AboutMe.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/aboutMe/AboutMe.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/aboutMe/AboutMe.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/Button.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/Button.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/button/Button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/button/Button.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/header/Header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/header/Header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/registration/Registration.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/registration/Registration.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/topBlock/TopBlock.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topBlock/TopBlock.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/topBlock/TopBlock.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topBlock/TopBlock.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/topBlock/TopBlock.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/topBlock/TopBlock.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/user/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/user/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/users/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/users/Users.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +78,7 @@
       <workItem from="1580800141537" duration="19777000" />
       <workItem from="1580889623471" duration="24981000" />
       <workItem from="1580969788926" duration="22620000" />
-      <workItem from="1581057219753" duration="7142000" />
+      <workItem from="1581057219753" duration="8528000" />
     </task>
     <servers />
   </component>

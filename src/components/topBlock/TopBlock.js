@@ -2,7 +2,7 @@ import React from 'react';
 import './TopBlock.css';
 import Button from "../button/Button";
 
-function TopBlock() {
+function TopBlock({scrollTo}) {
     return (
         <div className="top-block">
             <div className="container">
@@ -17,7 +17,7 @@ function TopBlock() {
                         application that meets minimum requirements. We look forward to your submission. Good luck!
                         The photo has to scale in the banner area on the different screens
                     </p>
-                    <Button/>
+                    <Button func={() => scrollTo(2500)}/>
                 </div>
             </div>
         </div>

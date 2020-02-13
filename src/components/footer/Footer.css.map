@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["Footer.scss","../../styles/variables.scss"],"names":[],"mappings":"AAEA;EACE;;AAEA;EACE;;AAGF;EACE,WCOG;EDNH,aCOU;EDLV","file":"Footer.css"}
+{
+"version": 3,
+"mappings": "AAEA,OAAQ;EACN,MAAM,EAAE,IAAI;EAEZ,gBAAW;IACT,MAAM,EAAE,MAAM;EAGhB,aAAQ;IACN,SAAS,ECON,IAAI;IDNP,WAAW,ECOD,IAAI;IDLd,KAAK,EAAE,OAAO",
+"sources": ["Footer.scss","../../styles/variables.scss"],
+"names": [],
+"file": "Footer.css"
+}

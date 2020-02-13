@@ -1,59 +1,49 @@
 .registration {
-  margin: 150px 0 125px;
-}
-.registration__content {
-  margin: 0 auto;
-}
-.registration__title {
-  font-size: 50px;
-  line-height: 54px;
-  text-align: center;
-}
-.registration__subtitle {
-  width: 450px;
-  margin: 17px auto 0;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
-  color: #706f6f;
-}
+  margin: 150px 0 125px; }
+  .registration__content {
+    margin: 0 auto; }
+  .registration__title {
+    font-size: 50px;
+    line-height: 54px;
+    text-align: center; }
+  .registration__subtitle {
+    width: 450px;
+    margin: 17px auto 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #706f6f; }
 
 .form-group {
   margin: 8px auto;
-  width: 466px;
-}
+  width: 466px; }
 
 .form-control__label {
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .select-position {
   margin: 18px 0 22px;
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .custom-control {
-  margin-top: 4px;
-}
+  margin-top: 4px; }
 
 .photo {
   margin: 16px auto 8px;
-  width: 468px;
-}
+  width: 468px; }
 
 .custom-width {
   display: block;
   width: 468px;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .form__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 .btn.btn-primary {
-  margin: 40px auto;
-}
+  margin: 40px auto; }
 
 /*# sourceMappingURL=Registration.css.map */

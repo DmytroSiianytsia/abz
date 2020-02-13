@@ -2,30 +2,35 @@
   position: fixed;
   top: 0;
   width: 100vw;
-  background: #ffffff;
-}
-.header__content {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .nav {
-  display: flex;
-  width: 445px;
-  justify-content: space-between;
-  font-size: 14px;
-  line-height: 60px;
-}
-.header .nav__item {
-  text-decoration: none;
-  color: black;
-}
-.header .nav__item:focus {
-  color: #007bff;
-}
-.header .nav__item:hover {
-  color: #ef5b4c;
-}
+  background: #ffffff; }
+  .header__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .header .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 445px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    font-size: 14px;
+    line-height: 60px;
+    cursor: pointer; }
+    .header .nav__item {
+      color: black; }
+      .header .nav__item:focus {
+        color: #007bff;
+        outline: none; }
+      .header .nav__item:hover {
+        color: #ef5b4c; }
 
 /*# sourceMappingURL=Header.css.map */

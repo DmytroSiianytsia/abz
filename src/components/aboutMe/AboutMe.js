@@ -2,7 +2,7 @@ import React from 'react';
 import Button from "../button/Button";
 import './AboutMe.css';
 
-function AboutMe() {
+function AboutMe({scrollTo}) {
     return (
         <div className="about-me">
             <div className="container">
@@ -12,7 +12,7 @@ function AboutMe() {
                     </h2>
                     <div className="about-me__wrap">
                         <div className="about-me__left">
-                            <img src="./img/man-laptop-v1.svg" alt="Man with laptop" className="about-me__img"/>
+                            <img src="./img/man-laptop-v1.svg" alt="Man with laptop" className="about-me__img" />
                         </div>
                         <div className="about-me__right">
                             <h3 className="about-me__subtitle">
@@ -27,7 +27,7 @@ function AboutMe() {
                                 will get bonus points. If you use any task runner (gulp/webpack) you will get bonus
                                 points as well. Slice service directory page PSD mockup​ into HTML5/CSS3.
                             </p>
-                            <Button value="Sign up now" mod="btn_white"/>
+                            <Button value="Sign up now" mod="btn_white" func={() => scrollTo(2500)}/>
                         </div>
                     </div>
                 </div>

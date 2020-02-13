@@ -10,26 +10,22 @@
   background: #ef5b4c;
   outline: none;
   user-focus: none;
-  cursor: pointer;
-}
-.btn:hover {
-  background: #d24335;
-}
+  cursor: pointer; }
+  .btn:hover {
+    background: #d24335; }
 
 .btn_white {
   text-align: left;
   font-weight: 600;
   letter-spacing: 0.1px;
   color: #ef5b4c;
-  background: #ffffff;
-}
-.btn_white:hover {
-  color: #d24335;
-  background: #ffffff;
-}
+  background: #ffffff; }
+  .btn_white:hover {
+    color: #d24335;
+    background: #ffffff; }
 
 .btn:focus {
-  box-shadow: none;
-}
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 /*# sourceMappingURL=Button.css.map */

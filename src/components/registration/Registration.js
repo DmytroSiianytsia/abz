@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './Registration.css';
 
 class Registration extends Component {
@@ -10,13 +10,13 @@ class Registration extends Component {
             email: '',
             phone: '',
             position_id: null
-        }
-    };
+        },    
+    };  
 
     getToken = () => {
         fetch('https://frontend-test-assignment-api.abz.agency/api/v1/token')
             .then(response => response.json())
-            .then(data => this.setState({token: data.token}))
+            .then(data => this.setState({ token: data.token }))
             .catch(error => new Error(error));
     };
 
@@ -31,7 +31,7 @@ class Registration extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        const {name, email, phone, position_id} = this.state.formData;
+        const { name, email, phone, position_id } = this.state.formData;
         const formData = new FormData();
         const fileField = document.querySelector('#customFile');
 
@@ -67,9 +67,9 @@ class Registration extends Component {
     }
 
     render() {
-        const {name, email, phone} = this.state.formData;
+        const { name, email, phone } = this.state.formData;
         return (
-            <div className="registration" id="registration__anchor">
+            <div className="registration" id="registration">
                 <div className="container">
                     <div className="registration__content">
                         <div className="registration__title">
@@ -182,7 +182,12 @@ class Registration extends Component {
                                 <label className="custom-file-label" htmlFor="customFile">Upload your photo</label>
                             </div>
                             <div className="form__btn">
-                                <button type="submit" className="btn btn-primary">Sign up now</button>
+                                <button
+                                    type="submit"
+                                    className="btn btn-primary"
+                                >
+                                    Sign up now
+                                </button>
                             </div>
                         </form>
                     </div>

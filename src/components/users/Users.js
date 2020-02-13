@@ -7,7 +7,7 @@ function Users({data, showMore}) {
     return (
         data
             ?
-            <div className="users">
+            <div className="users" id="users">
                 <div className="container">
                     <div className="users__title">
                         Our cheerful users

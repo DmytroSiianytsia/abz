@@ -18,8 +18,7 @@ class App extends Component {
             `https://frontend-test-assignment-api.abz.agency/api/v1/users?page=1&count=${this.state.countUsers}`;
         fetch(urlUsers)
             .then(response => response.json())
-            .then(data => this.setState({data: data}))
-        console.log('getUsers run', this.state)
+            .then(data => this.setState({data: data}))        
     };
 
     showMoreUsers = () => {
@@ -31,6 +30,13 @@ class App extends Component {
     resetCountUsers = () => {
       this.setState({countUsers: 6})
     };
+
+    scrollTo(coorY) {
+        window.scrollTo({
+            top: coorY,
+            behavior: "smooth"
+        });
+    }
 
     componentDidMount() {
         this.getUsers()
@@ -45,9 +51,9 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Header/>
-                <TopBlock/>
-                <AboutMe/>
+                <Header scrollTo={this.scrollTo}/>
+                <TopBlock scrollTo={this.scrollTo}/>
+                <AboutMe scrollTo={this.scrollTo}/>
                 <Users
                     data={this.state.data}
                     showMore={this.showMoreUsers}

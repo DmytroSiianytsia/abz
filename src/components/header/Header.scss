@@ -47,8 +47,9 @@
     top: 0;
     left: -700px;
     width: 290px;
-    height: 778px;
-    transition: 0.5s;        
+    max-height: 778px;
+    transition: 0.5s; 
+          
 
     background: #ffffff;    
     
@@ -84,9 +85,13 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 0 0 0 15px;   
-    height: 214px;
+    height: 180px;
     margin: 0;
   } 
+
+  hr {
+    margin: 6px 0;
+  }
 
   .hor-line {
     margin-top: 0;

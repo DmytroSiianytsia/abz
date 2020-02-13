@@ -7,6 +7,12 @@
   margin: auto;
   width: 200px;
   height: 270px;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    width: 180px;
+    height: 240px;
+  }
 
   &__photo {
     width: 74px;
@@ -22,10 +28,6 @@
 
     font-size: $h2;
     line-height: $h2-line-h;
-
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
   }
 
   &__tooltip {

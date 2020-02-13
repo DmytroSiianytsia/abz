@@ -1,16 +1,26 @@
 @import "../../styles/variables";
 
 .registration {
-  margin: 150px 0 125px;
+  margin: 150px auto 125px; 
 
   &__content {
-    margin: 0 auto;
+    margin: 0 auto;  
   }
 
   &__title {
     font-size: $h1-lg;
     line-height: $h1-line-h-lg;
     text-align: center;
+
+    @media (max-width: 992px) {
+      font-size: $h1-m;
+      line-height: $h1-line-h-m;
+    }
+
+    @media (max-width: 576px) {
+      font-size: $h1-sm;
+      line-height: $h1-line-h-sm;     
+    }
   }
 
   &__subtitle {
@@ -21,13 +31,13 @@
     line-height: $text-line-h;
     text-align: center;
 
-    color: #706f6f;
+    color: #706f6f;   
   }
 }
 
 .form-group {
   margin: 8px auto;
-  width: 466px;
+  width: 466px; 
 }
 
 .form-control__label {
@@ -62,7 +72,14 @@
 
 .btn.btn-primary {
   margin: 40px auto;
-
 }
 
-
+@media (max-width: 576px) {  
+  .registration__subtitle,
+  .form-group,
+  .registration__content,
+  .photo,
+  .custom-width {
+    width: 320px;
+  } 
+}

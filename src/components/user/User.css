@@ -9,7 +9,12 @@
   text-align: center;
   margin: auto;
   width: 200px;
-  height: 270px; }
+  height: 270px;
+  overflow: hidden; }
+  @media (max-width: 768px) {
+    .user {
+      width: 180px;
+      height: 240px; } }
   .user__photo {
     width: 74px;
     height: 74px;
@@ -19,10 +24,7 @@
   .user__name {
     margin-top: 12px;
     font-size: 24px;
-    line-height: 29px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis; }
+    line-height: 29px; }
   .user__tooltip {
     display: none; }
   .user__position {

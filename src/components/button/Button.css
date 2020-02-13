@@ -9,7 +9,6 @@
   color: #ffffff;
   background: #ef5b4c;
   outline: none;
-  user-focus: none;
   cursor: pointer; }
   .btn:hover {
     background: #d24335; }

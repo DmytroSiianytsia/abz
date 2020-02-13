@@ -3,15 +3,19 @@
 .header {
   position: fixed;
   top: 0;
+  height: 60px;
   width: 100vw;
   background: $bg1;
 
   &__content {
     display: flex;
     width: 100%;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between;    
   }
+
+  &__menu-burger {
+    display: none;
+  }  
 
   .nav {
     display: flex;
@@ -34,6 +38,22 @@
       &:hover {
         color: $primaryColor;
       }
+    }
+  }
+
+  @media (max-width: 640px) {
+    height: 40px;
+
+    .header__content {
+      margin-top: 10px;    
+    }
+
+    .nav-header {
+      display: none;
+    }
+
+    .header__menu-burger {
+      display: block;   
     }
   }
 }

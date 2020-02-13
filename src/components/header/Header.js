@@ -6,7 +6,8 @@ function Header({ scrollTo }) {
         <div className="header">
             <div className="container">
                 <div className="header__content">
-                    <img src="./img/logo.svg" alt="logo" className="logo__img" />
+                    <img src="./img/logo.svg" alt="test task" className="logo__img" />
+                    <img src="./img/menu-icon.svg" alt="menu" className="header__menu-burger" />                    
                     <nav className="nav-header">
                         <ul className="nav">
                             <li className="nav__item" tabIndex="0" onClick={() => scrollTo(0)}>Main</li>

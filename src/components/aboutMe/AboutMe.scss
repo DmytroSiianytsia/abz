@@ -14,14 +14,14 @@
     font-size: $h1-lg;
     line-height: $h1-line-h-lg;
     font-weight: 400;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.5px;  
   }
 
   &__wrap {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 50px;
+    margin-top: 50px;  
   }
 
   &__left {
@@ -29,12 +29,12 @@
   }
 
   &__img {
-    width: 339px;
+    width: 339px;   
   }
 
   &__right {
     width: 552px;
-    text-align: justify;
+    text-align: justify;   
   }
 
   &__subtitle {
@@ -52,5 +52,51 @@
     line-height: $text-line-h;
 
     color: #706f6f;
+  }
+
+  @media (max-width: 992px) {
+    height: 600px;
+    .about-me__title {
+      margin-top: 100px;
+
+      font-size: $h1-m;
+      line-height: $h1-line-h-m;
+    } 
+
+    .about-me__img {
+      width: 260px;
+    } 
+  }
+
+  @media (max-width: 768px) {
+    height: 650px;
+    .about-me__title {
+      margin-top: 80px;
+    }
+
+    .about-me__left {
+      margin: 50px 10px 0 0;
+    }
+
+    .about-me__right {
+      width: 500px;
+    }
+  }
+
+  @media (max-width: 576px) {
+    height: 863px;
+
+    .about-me__title {
+      font-size: $h1-sm;
+      line-height: $h1-line-h-sm;
+    }
+
+    .about-me__right {
+      width: 350px;
+    }
+
+    .about-me__wrap {
+      flex-direction: column;
+    }
   }
 }

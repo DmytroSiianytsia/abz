@@ -1,7 +1,9 @@
 @import "../../styles/variables";
 
 .registration {
+  position: relative;  
   margin: 150px auto 125px; 
+  z-index: 10;
 
   &__content {
     margin: 0 auto;  

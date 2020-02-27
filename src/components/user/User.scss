@@ -7,11 +7,10 @@
   margin: auto;
   width: 200px;
   height: 270px;
-  overflow: hidden;
+  overflow-x: hidden; 
 
   @media (max-width: 768px) {
-    width: 180px;
-    height: 240px;
+    width: 180px;    
   }
 
   &__photo {
@@ -42,12 +41,14 @@
   &__email,
   &__phone {
     font-size: $text;
-    line-height: $text-line-h;
+    line-height: $text-line-h;    
 
+    color: #706f6f;
+  }
+
+  &__email {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-
-    color: #706f6f;
   }
 }

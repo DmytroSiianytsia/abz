@@ -10,11 +10,10 @@
   margin: auto;
   width: 200px;
   height: 270px;
-  overflow: hidden; }
+  overflow-x: hidden; }
   @media (max-width: 768px) {
     .user {
-      width: 180px;
-      height: 240px; } }
+      width: 180px; } }
   .user__photo {
     width: 74px;
     height: 74px;
@@ -32,9 +31,10 @@
   .user__position, .user__email, .user__phone {
     font-size: 16px;
     line-height: 24px;
+    color: #706f6f; }
+  .user__email {
     overflow: hidden;
     white-space: nowrap;
-    text-overflow: ellipsis;
-    color: #706f6f; }
+    text-overflow: ellipsis; }
 
 /*# sourceMappingURL=User.css.map */

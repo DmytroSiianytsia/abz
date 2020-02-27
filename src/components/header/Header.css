@@ -3,7 +3,8 @@
   top: 0;
   height: 60px;
   width: 100vw;
-  background: #ffffff; }
+  background: #ffffff;
+  z-index: 999; }
   .header__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -55,14 +56,17 @@
     position: fixed;
     top: 0;
     left: -700px;
+    opacity: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1; }
+    z-index: -1;
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s; }
   .header .bg.visible {
     left: 0;
-    -webkit-transform: 0.5s;
-            transform: 0.5s; }
+    opacity: 1;
+    cursor: pointer; }
   .header .nav1 {
     display: -webkit-box;
     display: -ms-flexbox;

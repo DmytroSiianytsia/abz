@@ -1,5 +1,7 @@
 .registration {
-  margin: 150px auto 125px; }
+  position: relative;
+  margin: 150px auto 125px;
+  z-index: 10; }
   .registration__content {
     margin: 0 auto; }
   .registration__title {

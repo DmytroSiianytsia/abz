@@ -1,6 +1,6 @@
 import React from 'react';
 import './TopBlock.css';
-import Button from "../button/Button";
+import Button from "../Button/Button";
 
 function TopBlock({ scrollTo }) {
   return (

@@ -71,9 +71,9 @@ class Registration extends Component {
     }   
   }
 
-  // componentDidMount() {
-  //   this.getToken()    
-  // }
+  componentDidMount() {
+    this.getToken()    
+  }
 
   render() {    
     const { name, email, phone } = this.state.formData;

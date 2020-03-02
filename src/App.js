@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Header from "./components/header/Header";
-import TopBlock from "./components/topBlock/TopBlock";
-import AboutMe from "./components/aboutMe/AboutMe";
-import Users from "./components/users/Users";
-import Registration from "./components/registration/Registration";
-import Footer from "./components/footer/Footer";
+import Header from "./components/Header/Header";
+import TopBlock from "./components/TopBlock/TopBlock";
+import AboutMe from "./components/AboutMe/AboutMe";
+import Users from "./components/Users/Users";
+import Registration from "./components/Registration/Registration";
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
   state = {
@@ -41,9 +41,8 @@ class App extends Component {
   scrollTo = block => {
     const main = 0;
     const aboutMe = document.getElementById('topBlock').getBoundingClientRect().height + main;
-    const users = document.getElementById('aboutMe').getBoundingClientRect().height + aboutMe;
-    const signUp = users;
-    // const signUp = document.getElementById('users').getBoundingClientRect().height + users;
+    const users = document.getElementById('aboutMe').getBoundingClientRect().height + aboutMe;    
+    const signUp = document.getElementById('users').getBoundingClientRect().height + users;
 
     switch (block) {
       case 'main':

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Users.css';
-import User from "../user/User";
-import Button from "../button/Button";
+import User from "../User/User";
+import Button from "../Button/Button";
 import Loader from 'react-loader-spinner';
 
 function Users({ data, showMore }) {

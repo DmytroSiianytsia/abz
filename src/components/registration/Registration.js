@@ -54,8 +54,8 @@ class Registration extends Component {
       })
       .then(data => {
         if (data.success) {
-          this.props.getUsers();
           this.props.resetCountUsers();
+          this.props.getUsers();
         }
       })
       .catch(function (error) {
@@ -64,22 +64,23 @@ class Registration extends Component {
   };
 
   getFileName = () => {
-    if (document.querySelector('#customFile')) {     
+    if (document.querySelector('#customFile')) {
       this.setState(
-        {uploadPhoto: document.querySelector('#customFile').files[0].name}
-        )
-    }   
+        { uploadPhoto: document.querySelector('#customFile').files[0].name }
+      )
+    }
   }
 
   componentDidMount() {
-    this.getToken()    
+    this.getToken()
   }
 
-  render() {    
-    const { name, email, phone } = this.state.formData;
-    const {scrollTo} = this.props;
+  render() {
+    const { name, email, phone, position_id } = this.state.formData;
+    const { uploadPhoto } = this.state;
+    const { scrollTo } = this.props;
     return (
-      <div className="registration"  id="registration">
+      <div className="registration" id="registration">
         <div className="container">
           <div className="registration__content">
             <div className="registration__title">
@@ -103,7 +104,7 @@ class Registration extends Component {
                   placeholder="Your name"
                   onChange={(e) => this.handleChange(e)}
                   required
-                />               
+                />
                 <label htmlFor="email" className="form-control__label">Email</label>
                 <input
                   className="form-control"
@@ -143,7 +144,7 @@ class Registration extends Component {
                     required
                   />
                   <label className="custom-control-label text-dark" htmlFor="customRadio1">
-                    Frontend developer
+                    Security
                   </label>
                 </div>
                 <div className="custom-control custom-radio">
@@ -156,7 +157,7 @@ class Registration extends Component {
                     onChange={(e) => this.handleChange(e)}
                   />
                   <label className="custom-control-label text-dark" htmlFor="customRadio2">
-                    Backend developer
+                    Designer
                   </label>
                 </div>
                 <div className="custom-control custom-radio">
@@ -169,7 +170,7 @@ class Registration extends Component {
                     onChange={(e) => this.handleChange(e)}
                   />
                   <label className="custom-control-label text-dark" htmlFor="customRadio3">
-                    Designer
+                    Content manager
                   </label>
                 </div>
                 <div className="custom-control custom-radio">
@@ -182,7 +183,7 @@ class Registration extends Component {
                     onChange={(e) => this.handleChange(e)}
                   />
                   <label className="custom-control-label text-dark" htmlFor="customRadio4">
-                    QA
+                    Lawyer
                   </label>
                 </div>
               </div>
@@ -192,21 +193,36 @@ class Registration extends Component {
                   className="custom-file-input uploadPhoto"
                   type="file"
                   id="customFile"
-                  onChange={this.getFileName} 
-                  required                
+                  onChange={this.getFileName}
+                  required
                 />
                 <label className="custom-file-label" htmlFor="customFile">{this.state.uploadPhoto}</label>
               </div>
               <div className="form__btn">
-                <button
-                  className="btn btn-primary"
-                  type="submit"
-                  onClick={() => {
-                    scrollTo('users');                   
-                  }}
-                >
-                  Sign up now
-                </button>
+                {
+                  (
+                    name !== '' && email !== '' &&
+                    phone !== '' && position_id !== null && 
+                    uploadPhoto !== 'Upload your photo'
+                  )
+                    ?
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                      onClick={() => {
+                        scrollTo('users');
+                      }}
+                    >
+                      Sign up now
+                    </button>
+                    :
+                    <button
+                      className="btn btn-primary"
+                      type="submit"
+                    >
+                      Sign up now
+                    </button>
+                }
               </div>
             </form>
           </div>
